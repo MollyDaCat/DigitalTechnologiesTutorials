@@ -99,6 +99,7 @@ margin_right = 636.0
 margin_bottom = 36.0
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 2 )
+text = "Other Devices that are Perihperals"
 align = 1
 autowrap = true
 
@@ -109,6 +110,13 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
+text = "A peripheral does not have to have only the function of acting as a peripheral device however, they can function independantly outside of being a peripheral device. However this is the exception, not the rule. Most do not have any function outside of inputting or outputting information to the user.
+
+However devices such as phones can be a peripheral device, and these can function outside of being used a peripheral device. Whether this be acting as a storage device for transfering files, or being used as an input device in the form of a trackpad. And phones are not the only case of this, there are smart watches, fitness trackers and even tablets that can also be peripherals. 
+
+And even devices with peripherals themselves can be used a perohperal, you can project onto a laptop, in turn making it a peripheral, and in turn allowing you to use its peripherals on the main device in the process. 
+
+Or even things like printers are peripherals, as you can not only use them independently outside of a computer, but you can also project to them through a computer, allowing you to use them as a peripheral device. "
 autowrap = true
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]

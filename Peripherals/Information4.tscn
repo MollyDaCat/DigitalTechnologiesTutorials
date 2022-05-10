@@ -99,6 +99,7 @@ margin_right = 636.0
 margin_bottom = 36.0
 size_flags_vertical = 1
 custom_fonts/font = SubResource( 2 )
+text = "What about other devices?"
 align = 1
 autowrap = true
 
@@ -109,6 +110,11 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
+text = "So far most of the content covered has been simple things that are easily recognisable as periherals. But perihperals can be found in almost every device. This is things from phones, tablets, gaming consoles, and even things such as TVs. 
+
+However it is harder to recognise the peripheral devices because they are generally built into the device. For example, phones have speakers, webcams, storage and more built into them. These are all peripherals that have been touched on in the previous sections, ones that you might not realise are peripherals however, simply because they are built in. There are many examples of this through any device however, a remote, a cntroller or even a TV itself for gaming consoles. Even cars have peripheral devices in them. And these are just as important even when you can't see them.
+
+In fact many things in your home would be unusable without these devices in them. How would you manage to turn the heater on, or use the microwave, or the oven. Life would be unrecogniseable to what we're living right now. "
 autowrap = true
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]

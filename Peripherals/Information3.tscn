@@ -110,7 +110,11 @@ margin_bottom = 613.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "As perviously touched upon, peripherals are not required for a device to run. This begs the question of why we even need them then. A computer can run easily without these peripherals. However you wouldn't be able to use them without some of them. Think of how you normally use a computer. The keyboard and mouse are almost required to be able to use the computer. This is because these devices allow you to input data into the computer. How else would you be able to do things on it if you didn't have these devices. Along with this think about how you are recieving information. This is through images being projected to you"
+text = "As perviously touched upon, peripherals are not required for a device to run. This begs the question of why we even need them then. A computer can run easily without these peripherals. However you wouldn't be able to use them without some of them. Think of how you normally use a computer. The keyboard and mouse are almost required to be able to use the computer. This is because these devices allow you to input data into the computer. How else would you be able to do things on it if you didn't have these devices. Along with this think about how you are recieving information. This is through images being projected to you on a device such as a monitor. And how is this information being stored? Through a hard drive, another type of perohperal.
+
+As such, while a peripheral device is not at all required for a computer to run, it is needed for humans to understand the data in an easily accessible form. Along with this, it is needed for us to interact with the computers, otherwise we end up with something that can only do what it was originally made for, instead of a universal device like a computer. 
+
+This is not something we are used to however, and as such it is hard to understand just how bland these things would be without these devices. Imagine launching a computer, but you can't see anything, or even interact with it in anyway. It is still running, however you can't see or understand what it is doing."
 autowrap = true
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]

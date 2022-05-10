@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Font/Merriweather/Merriweather-Italic.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://Images/800px-Google_Images_2015_logo.svg.png" type="Texture" id=2]
@@ -23,10 +23,14 @@ size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=4]
-size = 32
+size = 25
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=5]
+size = 32
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=6]
 size = 40
 font_data = ExtResource( 1 )
 
@@ -94,16 +98,16 @@ size_flags_horizontal = 3
 
 [node name="Example_Question" type="Label" parent="VBoxContainer/Main/questionAnswer"]
 margin_right = 638.0
-margin_bottom = 85.0
+margin_bottom = 41.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "Which of these is not a type of peripheral device?"
+text = "Do we need peripherals for other devices?"
 align = 1
 autowrap = true
 
 [node name="Answers" type="VBoxContainer" parent="VBoxContainer/Main/questionAnswer"]
-margin_top = 89.0
+margin_top = 45.0
 margin_right = 638.0
 margin_bottom = 613.0
 size_flags_vertical = 3
@@ -113,24 +117,24 @@ __meta__ = {
 
 [node name="Button" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_right = 638.0
-margin_bottom = 128.0
+margin_bottom = 139.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Input Device"
+text = "No"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Button2" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_top = 132.0
+margin_top = 143.0
 margin_right = 638.0
-margin_bottom = 260.0
+margin_bottom = 282.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
-text = "Indirect Connection Device"
+text = "Yes"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -138,31 +142,33 @@ __meta__ = {
 scene_to_load = "res://Peripherals/Information3.tscn"
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_top = 264.0
+margin_top = 286.0
 margin_right = 638.0
-margin_bottom = 392.0
+margin_bottom = 425.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
-text = "Shared Device"
+custom_fonts/font = SubResource( 4 )
+text = "Yes, to send or recieve information"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Peripherals/Information2.tscn"
+scene_to_load = "res://Peripherals/Information5.tscn"
 
 [node name="Button4" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
-margin_top = 396.0
+margin_top = 429.0
 margin_right = 638.0
-margin_bottom = 524.0
+margin_bottom = 568.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 3 )
-text = "Input/Output Device"
+custom_fonts/font = SubResource( 4 )
+text = "No, but we need them to send or recieve information"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+scene_to_load = "res://Peripherals/Information5.tscn"
+array_pos = 43
 
 [node name="Navigation" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 672.0
@@ -178,7 +184,7 @@ margin_right = 185.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
 text = "Main Menu"
 script = ExtResource( 3 )
 scene_to_load = "res://MainMenu.tscn"
@@ -189,7 +195,7 @@ margin_right = 407.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
 text = "Return to Info"
 script = ExtResource( 3 )
 scene_to_load = "res://Peripherals/Information4.tscn"
@@ -200,7 +206,7 @@ margin_right = 494.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
 text = "Back"
 script = ExtResource( 3 )
 
@@ -210,7 +216,7 @@ margin_right = 578.0
 margin_bottom = 51.0
 size_flags_horizontal = 0
 size_flags_vertical = 3
-custom_fonts/font = SubResource( 4 )
+custom_fonts/font = SubResource( 5 )
 text = "Next"
 script = ExtResource( 3 )
 scene_to_load = "res://Peripherals/Information5.tscn"
@@ -220,10 +226,10 @@ margin_left = 582.0
 margin_right = 1279.0
 margin_bottom = 51.0
 size_flags_horizontal = 3
-custom_fonts/font = SubResource( 5 )
+custom_fonts/font = SubResource( 6 )
 text = "15,500"
 align = 2
 [connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button" to="VBoxContainer/Main/questionAnswer/Answers/Button" method="_on_Incorrect_Answer"]
-[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button2" to="VBoxContainer/Main/questionAnswer/Answers/Button2" method="_on_Correct_Answer"]
-[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button3" to="." method="_on_Incorrect_Answer"]
-[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button4" to="VBoxContainer/Main/questionAnswer/Answers/Button4" method="_on_Incorrect_Answer"]
+[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button2" to="VBoxContainer/Main/questionAnswer/Answers/Button2" method="_on_Incorrect_Answer"]
+[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button3" to="VBoxContainer/Main/questionAnswer/Answers/Button3" method="_on_Incorrect_Answer"]
+[connection signal="pressed" from="VBoxContainer/Main/questionAnswer/Answers/Button4" to="VBoxContainer/Main/questionAnswer/Answers/Button4" method="_on_Correct_Answer"]

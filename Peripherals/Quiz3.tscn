@@ -98,7 +98,7 @@ margin_bottom = 41.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
 custom_fonts/font = SubResource( 2 )
-text = "Example"
+text = "What is the Purpose of Perihperals"
 align = 1
 autowrap = true
 
@@ -117,6 +117,7 @@ margin_bottom = 139.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
+text = "To make the computer run faster"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -129,11 +130,13 @@ margin_bottom = 282.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
+text = "To allow interaction with devices"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-scene_to_load = "res://Peripherals/Information3.tscn"
+scene_to_load = "res://Peripherals/Information4.tscn"
+array_pos = 42
 
 [node name="Button3" type="Button" parent="VBoxContainer/Main/questionAnswer/Answers"]
 margin_top = 286.0
@@ -142,6 +145,7 @@ margin_bottom = 425.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
+text = "To make it look nice"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -155,6 +159,7 @@ margin_bottom = 568.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 3 )
+text = "To make things harder"
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_use_anchors_": false
